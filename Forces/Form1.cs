@@ -35,5 +35,15 @@ namespace Forces
         {
             return (Math.Acos(x) * 180 / Math.PI);
         }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
