@@ -16,5 +16,24 @@ namespace Forces
         {
             InitializeComponent();
         }
+        double sin(double x)
+        {
+            return (Math.Sin(x * Math.PI / 100.0));
+        }
+
+        double asin(double x)
+        {
+            return (Math.Asin(x) * 180 / Math.PI);
+        }
+
+        double cos(double x)
+        {
+            return (Math.Cos(x * Math.PI / 100.0));
+        }
+
+        double Acos(double x)
+        {
+            return (Math.Acos(x) * 180 / Math.PI);
+        }
     }
 }
