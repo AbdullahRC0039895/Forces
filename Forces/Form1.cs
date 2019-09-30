@@ -16,17 +16,17 @@ namespace Forces
         {
             InitializeComponent();
         }
-        double sin(double x)
+        double Sin(double x)
         {
             return (Math.Sin(x * Math.PI / 100.0));
         }
 
-        double asin(double x)
+        double Asin(double x)
         {
             return (Math.Asin(x) * 180 / Math.PI);
         }
 
-        double cos(double x)
+        double Cos(double x)
         {
             return (Math.Cos(x * Math.PI / 100.0));
         }
@@ -43,6 +43,38 @@ namespace Forces
 
         private void Label5_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            double force, angle;
+            try
+            {
+                force = double.Parse(textBox1.Text);
+            }
+            catch
+            {
+                MessageBox.Show(textBox1.Text + " ,Put numbers in you git");
+                force = 0.0;
+            }
+
+            try
+            {
+                angle = double.Parse(textBox2.Text);
+            }
+            catch
+            {
+                MessageBox.Show(textBox2.Text + " ,Put numbers in you git");
+                angle = 0.0;
+            }
+            
+
+            double Fx = force * Cos(angle);
+            label3.Text = "Fx =" + Fx;
+
+            double Fy = force * Sin(angle);
+            label4.Text = "Fy =" + Fy;
 
         }
     }
